@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+    header {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        font-family: Fraunces, sans-serif;
+    }
+
+    footer {
+        font-family: Barlow, sans-serif;
+        background-color: #90d4c5;
+    }
+
+@media screen and (max-aspect-ratio: 1) and (max-width: 767px) {
+    header {
+        width: 100vw;
+        position: fixed;
+        z-index: 1;
+    }
+}
